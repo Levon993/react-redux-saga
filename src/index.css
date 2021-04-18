@@ -1,0 +1,125 @@
+.App
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap:wrap ;
+}
+.App:nth-child(1)
+{
+    justify-content: center;
+    width: 100%;
+
+}
+
+
+.form{
+    width: 50%;
+    height: 200px;
+
+}
+.fetched
+{
+    width: 50%;
+    height: auto;
+
+}
+.list
+{
+    width: 100%;
+    height: 200px;
+
+}
+
+.card
+{
+    width:100% ;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     border: 1px dashed silver;
+}
+.card p
+{
+    text-align: center;
+}
+.fetch-btn
+{
+    color: white;
+    height: 35px;
+    border-radius: 5px;
+    border-style: none;
+    background: cornflowerblue;
+}
+.postForm
+{
+    margin-top: 70px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.form__input{
+    width: 90%;
+
+    border-style: none;
+    border-bottom: 3px solid  silver;
+    transition: .5s;
+}
+.form__input:active, :focus{
+    outline: 0;
+    outline-offset: 0;
+    border-style: none;
+    border-bottom: 1px solid  green;
+}
+.postForm_button{
+    margin-top: 10px;
+    border-radius: 5px;
+    border-style: none;
+    height: 35px;
+    background:blueviolet ;
+    color:white ;
+    padding: 5px;
+
+}
+
+lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: black transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.alert
+{
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    border: 1px solid rgb(242, 213, 133);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 222, 133);
+}
